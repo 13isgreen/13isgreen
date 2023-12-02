@@ -1,28 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Position Analysis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .w3-sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+    </style>
 </head>
 <body>
-    <h1> Position Analysis</h1>
-    <p>
-        https://app.joinhandshake.com/stu/jobs/8149238?ref=home-unit-item
-        <br>
-        <br>
-        https://app.joinhandshake.com/stu/jobs/8004829
-        <br><br>
-        https://www.lockheedmartinjobs.com/job/orlando/software-cyber-engineer-intern-intern-academy-orlando-fl/694/56328788016
-        <br><br>
-         
-             1. What did you learn from searching for and annotating the job advertisements? (1 paragraph or 4-6 complete sentences)
-        I see that a lot of software engineering internships are remote which is great because it means there are a lot more available opportunity for me. I also saw that they usually pay relatively well compared to part-time restaurant jobs that I have had in the past. They often want you to apply externally and sometimes require a transcript.
-        <br><br>
-             2. Based on your academic, professional, and personal experiences to date, which position would you be the most qualified for? Why? (1 paragraph or 4-6 complete sentences)
-        Of the three positions posted above I believe I am most qualified for the first one since they are seeking juniors, and I am a junior. But the other two have signifcantly less qualifications so by some logic I am more qualified for those jobs even tho I meet more of the qualifications for the first job. The second job is the most interesting to me because it is dealing with linux software which I am passionate about and its onsite which means ill be able to join a community and make connections with people.
-        <br><br>   
-            3. What skills or experiences might you need to gain to become a top candidate for one of these positions? (1 paragraph or 4-6 complete sentences)
-        I think an important metric towards gaining Candice would be a high gpa since many of these jobs ask for a transcript. Another metric might be having interesting GitHub projects available on your resume or experience in a similar field. I have heard at higher levels there are technical interviews which can set you apart from other candidates for software engineering roles, but I have yet to experience one while looking for an internship.
-        
-    </p>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item"><b>Menu</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black" href="../pages\School/Resume.html">Resume</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">CoverLetter</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">Position Analysis</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="../pages\School/Reflection.html">Reflection</a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Position Analysis</h1>
+                <p>
+                    https://app.joinhandshake.com/stu/jobs/8149238?ref=home-unit-item
+                    <br>
+                    https://app.joinhandshake.com/stu/jobs/8004829
+                    <br>
+                    https://www.lockheedmartinjobs.com/job/orlando/software-cyber-engineer-intern-intern-academy-orlando-fl/694/56328788016
+                    <br><br>
+                    1. What did you learn from searching for and annotating the job advertisements? (1 paragraph or 4-6 complete sentences) I see that a lot of software engineering internships are remote which is great because it means there are a lot more available opportunity for me. I also saw that they usually pay relatively well compared to part-time restaurant jobs that I have had in the past. They often want you to apply externally and sometimes require a transcript.
+                    <br><br>
+                    2. Based on your academic, professional, and personal experiences to date, which position would you be the most qualified for? Why? (1 paragraph or 4-6 complete sentences) Of the three positions posted above I believe I am most qualified for the first one since they are seeking juniors, and I am a junior. But the other two have signifcantly less qualifications so by some logic I am more qualified for those jobs even tho I meet more of the qualifications for the first job. The second job is the most interesting to me because it is dealing with linux software which I am passionate about and its onsite which means ill be able to join a community and make connections with people.
+                    <br><br>
+                    3. What skills or experiences might you need to gain to become a top candidate for one of these positions? (1 paragraph or 4-6 complete sentences) I think an important metric towards gaining Candice would be a high gpa since many of these jobs ask for a transcript. Another metric might be having interesting GitHub projects available on your resume or experience in a similar field. I have heard at higher levels there are technical interviews which can set you apart from other candidates for software engineering roles, but I have yet to experience one while looking for an internship.
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+                <p class="w3-border w3-padding-large w3-padding-32 w3-center"></p>
+                <p class="w3-border w3-padding-large w3-padding-64 w3-center"></p>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a class="w3-button w3-hover-black" href="../pages\School/Resume.html">1</a>
+                <a class="w3-button w3-hover-black" href="#">2</a>
+                <a class="w3-button w3-black" href="#">3</a>
+                <a class="w3-button w3-hover-black" href="../pages\School/Reflection.html">4</a>
+                <a class="w3-button w3-hover-black" href="#">5</a>
+                <a class="w3-button w3-hover-black" href="#">»</a>
+            </div>
+        </div>
+
+        <footer id="myFooter">
+            <div class="w3-container w3-theme-l2 w3-padding-32">
+                <h4>Footer</h4>
+            </div>
+
+            <div class="w3-container w3-theme-l1">
+            </div>
+        </footer>
+
+        <!-- END MAIN -->
+    </div>
+
+    <script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+    </script>
+
 </body>
 </html>
